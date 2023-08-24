@@ -42,9 +42,26 @@ var student = {
     enemies : {
         enemyOne:"Voldemort",
         enemyTwo:"Bellatrix"
+    },
+    isActiveStudent: false 
 }
-}
+if(student.isActiveStudent){
+console.log(student.dateOfBirth);
+console.log(student.enemies.enemyOne);
+console.log(student.enemies.enemyTwo);
+console.log(Object.values(student));
+console.log(Object.keys(student));
+console.log(Object.keys(student.enemies));
+console.log(JSON.stringify(student));
+} else{
+    console.log(`${student.firstName} ${"is not an active student"}`)
+};
 
-console.log(student.dateOfBirth)
-console.log(student.enemies.enemyOne)
-console.log(student.enemies.enemyTwo)
+// arrays
+var names = ["Ali","Arslan","Burak","Buğra","Bekir","Ceyhun"];
+console.log(names[0]);
+i = 0;
+while (i<names.length){
+    console.log(`index ${i} : ${names[i]}`);
+    i = i+1;    
+}
