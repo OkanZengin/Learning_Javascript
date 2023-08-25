@@ -29,4 +29,7 @@ for(var i =1; i<15; i++ ){
         console.log("i is greater than 6 " + i);
     }
 };
+//logical operators
+// && = And
+// || = Or
 
